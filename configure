@@ -15,7 +15,7 @@ Configures simultaneous AP and Managed Mode Wifi on Raspberry Pi
 
 USAGE:
     rpi-wifi -a <ap_ssid> [<ap_password>] -c <client_password> [<client_password>]
-    
+
     rpi-wifi -a MyAP myappass -c MyWifiSSID mywifipass
 
 PARAMETERS:
@@ -79,7 +79,7 @@ MAC_ADDRESS="$(cat /sys/class/net/wlan0/address)"
 
 # Install dependencies
 sudo apt -y update
-sudo apt -y upgrade
+# sudo apt -y upgrade
 sudo apt -y install dnsmasq dhcpcd hostapd cron
 
 # Populate `/etc/udev/rules.d/70-persistent-net.rules`
